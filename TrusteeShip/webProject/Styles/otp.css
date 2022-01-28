@@ -1,0 +1,105 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+     background-color: #f7f7f7;
+     margin:5%;
+}
+.container{
+    justify-content: center;
+    text-align: center;
+}
+/* OTP info ids */
+#header{
+     margin-left: 40px;
+     font-weight:normal;
+     /* text-align: center; */
+}
+
+
+#header2{
+    margin-right: 250px;
+    font-weight:normal;
+}
+/* otp info ids */
+.mid {
+    color:rgb(134 124 30);
+    margin-left: 83px;
+    margin-right: 205px;
+}
+/* content */
+.mid p{
+    font-size:23px;
+    margin-left: 178px;
+    margin-right: 5px;
+
+}
+.num{
+    color:navy;
+    margin-left:130px;
+    margin-right: 205px;
+
+}
+#card{
+    margin-left:120px;
+    margin-right: 7px;
+}
+#succ{
+    color:rgb(3, 122, 9);
+    margin-left: 39px;
+}
+.bottom{
+    margin-left: 33px;
+    color:#001f79;
+    font-size: 22px;
+}
+/* content end */
+
+/* buttons start */
+.btn{
+    border:3px solid mediumblue;
+    height: 25px;
+
+}
+.btn1{
+    margin-top:15px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+
+}
+#subm{
+    background-color: #001f79;
+    border: 2px solid black;
+    color:white;
+     padding:8px 32px ;
+     margin:2px 4px;
+    font-size: 18px;
+    width:200px;
+    cursor: pointer;
+    font-weight: bold;
+
+
+
+}
+#subm:hover{
+    background-color: mediumblue;
+}
+#can{
+    background-color:white;
+    border: 2px solid black;
+     padding:8px 32px ;
+     margin:2px 4px;
+    font-size: 18px;
+    width:140px;
+    cursor: pointer;
+
+}
+#can:hover{
+    background-color:dimgrey;
+    color:white;
+}
+/* button end...... */

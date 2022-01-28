@@ -1,0 +1,103 @@
+
+body{
+    background-image:url(https://prods3.imgix.net/images/articles/2016_11/Featured-Sweet-Potato-Chaat-Indian-Recipe.jpg);
+    background-repeat:no-repeat;
+    background-size:1600px 1000px;
+
+    /* Add the blur effect */
+       /*filter: blur(30px);
+       -webkit-filter: blur(30px);*/
+}
+form{
+    background-color:rgb(0 0 0 / 73%);
+    border-radius:0% 15% 15% 15%;
+    width:1000px;
+    height:600px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    margin:10%;
+    margin-left:10%;
+    color:white;
+}
+form:hover{
+    box-shadow:2px 4px 30px rgb(0 89 191);
+}
+table{
+    padding:0px;
+    margin:16px;
+}
+.title{
+  margin-top:5%;
+  padding:10px;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.title::before{
+  content: "";
+  position:absolute;
+  bottom: 0;
+  height: 3px;
+  width: 25%;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+input[type="text"],input[type="email"],input[type="tel"]{
+    border-radius:0px 20px 20px 20px;
+    height:30px;
+    width:350px;
+    padding:8px;
+}
+input:hover{
+    background-color:transparent;
+    color: white;
+    text-decoration:uppercase;
+    border:2px solid;
+}
+textarea{
+    border-radius:15px;
+    padding:8px;
+    background-color:transparent;
+    color:white;
+}
+textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  opacity: 1; /* Firefox */
+}
+textarea:hover{
+    background-color:rgb(2 58 122 / 55%);;
+}
+input[type="radio"]{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.button{
+   height: 50px;
+   margin: 50px 50px;
+}
+.button input{
+   height: 100%;
+   width: 95%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(
+   135deg, #049aff, #610587);
+}
+.button input:hover{
+    transition: all 0.2s ease;
+    background: linear-gradient(
+    -135deg, #049aff, #610587);
+}

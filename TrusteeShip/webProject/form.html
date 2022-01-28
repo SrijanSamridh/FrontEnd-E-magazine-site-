@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles/form.css">
+    <title>TrusteeShip.com</title>
+    <link rel="shortcut icon" type="image/x-icon" href="draw/logo.png">
+</head>
+<body>
+    <form action="method.html" autocomplete="on">
+        <dd>
+            <br>
+            <div class="title">MEMBER'S FORM</div>
+            <table>
+            <tr>
+                <td><label for="name">&ensp;NAME</label></td>
+                <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                <td><label>&ensp;EMAIL ID</label></td>
+
+            </tr>
+            <tr>
+                <td><input type="text" id="user" placeholder="Enter Your Name" value="" required></td>
+                <td></td>
+                <td><input type="email" placeholder="i.e;@example.com" required></td>
+            </tr>
+                <tr><td><br></td></tr>
+            <tr>
+                <td><label for="company">&ensp;COMPANY</label></td>
+                <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                <td><label>&ensp;MOBILE</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="company" placeholder="Enter Company Name" required></td>
+                <td></td>
+                <td><input type="tel" placeholder="Enter here i.e;(+91 1234567890)" maxlength="14"  required></td>
+            </tr>
+                <tr><td><br></td></tr>
+            <tr>
+                <td><label for="address">&ensp;ADDRESS</label></td>
+                <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                <td><label>&ensp;GENDER</label></td>
+            </tr>
+            <tr>
+                <td><textarea id="address" name="address" rows="5" cols="42" placeholder="Enter Your Address"></textarea></td>
+                <td>&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                <td><input type="radio" id="male" name="gender" required>MALE <br>
+                <input type="radio" id="female" name="gender" required>FEMALE <br>
+                <input type="radio" id="others" name="gender" required>OTHERS</td>
+            </tr>
+            </table>
+            <span style="float:right; margin-right:10%;">Pay: 1499/-</span>
+            <div class="button">
+                <input type="submit" onclick=" myName() " value="PAYMENT GATEWAY">
+            </div>
+        </dd>
+    </form>
+
+    <script src="JavaScript/form.js"></script>
+
+</body>
+</html>

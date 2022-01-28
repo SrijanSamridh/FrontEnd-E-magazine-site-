@@ -1,0 +1,80 @@
+.footer{
+    display:flex;
+    flex-direction:row;
+    margin-left: 9%;margin-top: 5%;
+    border:solid dimgray;
+    width: 80%;
+    border-radius: 2%
+}
+
+
+.di{
+    margin-left: 20px;
+    color:#a52a2a
+}
+#e-m{
+    font-size: 25px;
+}
+.fa-envelope{
+    
+    /* height: 20px;
+    width: 20px; */
+    font-size: 36px;
+    color:#a52a2a;
+    text-decoration: none;
+    
+}
+.fa-phone{
+    
+    /* height: 20px;
+    width: 20px; */
+    font-size: 35px;
+    color:#a52a2a;
+    text-decoration: none;
+    
+}
+.fa-linkedin{
+    
+    /* height: 20px;
+    width: 20px; */
+    font-size: 36px;
+    color:#a52a2a;
+    text-decoration: none;
+    
+}
+.fa-github{
+    
+    /* height: 20px;
+    width: 20px; */
+    font-size: 36px;
+    color:#a52a2a;
+    text-decoration: none;
+    
+}
+.hr-100 {
+    width: 100%;
+    height: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: #a52a2a;
+    border: 0 none;
+}
+.hr-java {
+    width: 10%;
+    height: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: #a52a2a;
+    border: 0 none;
+    float: left;
+}
+#phr{
+    background-color:#a52a2a;
+    height: 2px;
+}
+.red-info{
+    background-color: #bd5e5e;
+    width: 900px;
+    height: 200px;
+    border-radius: 5px;
+}

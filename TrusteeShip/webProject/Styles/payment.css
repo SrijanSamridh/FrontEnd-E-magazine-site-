@@ -1,0 +1,174 @@
+body{
+    background-image:url(https://wallpapercave.com/wp/wp2300372.jpg);
+    background-size:cover;
+}
+.container{
+    content:"hello world";
+    background:linear-gradient(
+               45deg, black,#8a2be2b5, #4254b99c, black);
+    border-radius:5%;
+    width:500px;
+    height:300px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    margin-top:10%;
+    color:white;
+    box-shadow: 0px 10px 25px #2196f3;
+
+}
+.container:hover{
+    transform:perspective(1000px) rotateY(360deg);
+    transition:transform .7s ease-in;
+}
+       /*----CREDIT CARD-FRONT---- */
+
+
+/* contactless-icon  */
+
+#front{
+    display:inline-block;
+    margin-left:10%;
+    margin-top: 90px;
+    
+}
+
+.fa-rss{
+    color:dimgrey;
+    float:right;
+    margin-top:5%;
+    margin-right:10%;
+}
+#contactless{
+    font-size:30px;
+}
+
+/* CARD-NUMBER */
+.image{
+    margin-left:5%;
+    margin-top:5%;
+    border-radius:25%;
+}
+#cardNumber{
+    font-size:25px;
+    margin-top:2%;
+    margin-left:4%;
+    width:85%;
+    background-color:transparent;
+    border:1px solid transparent;
+}
+#cardNumber::placeholder{
+    color:black;
+    font-size:25px;
+}
+input[type="text"]{
+    height:30px;
+    text-align:center;
+}
+
+/* VALID-THROU */
+.VALID-THROUGH{
+    float:right;
+    margin:3%;
+    font-size:10px;
+}
+
+input[type="number"]{
+    width:40px;
+    float:right;
+    margin-top:3%;
+    background-color:transparent;
+    border:1px solid transparent;
+}
+#year{
+    margin-right:10%;
+}
+
+/* CARD HOLDER NAME */
+#name{
+    text-align:left;
+    font-size:15px;
+    margin-top:10%;
+    margin-left:5%;
+    width:50%;
+    background-color:transparent;
+    border:1px solid transparent;
+}
+#name::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: yellow;
+  opacity: 1; /* Firefox */
+}
+
+/* VISA-LOGO( At bottom left) */
+
+.fa-cc-visa{
+    float:right;
+    color:black;
+    margin-right:10%;
+}
+#visa{
+    font-size:300%;
+    margin-top:-5%;
+}
+
+        /* CREDIT CARD-BACK */
+
+#back{
+float:right;
+margin-right:10%;
+margin-top: 90px;
+}
+
+/* BLACKBAR */
+
+.BLACKBAR{
+    width:100%;
+    height:20%;
+    background-color:black;
+    margin-top:10%;
+}
+
+
+/* PHONE.NO(Below black bar) */
+
+input[type="number"]::placeholder{
+    color:black;
+}
+/* BLOW PARA */
+p{
+    font-size:small;
+    margin:5%;
+}
+/* BANK-LINK */
+a{
+    color:white;
+}
+.button2:hover {
+    box-shadow: 5px 10px #888888;
+}
+.button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background:linear-gradient(
+                 45deg, black,#8a2be2b5, #4254b99c, rgb(32, 36, 37));
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    
+    }
+
+.button:hover {
+    background-color: #2EE59D;
+    background:linear-gradient(
+               -45deg, black,#8a2be2b5, #4254b99c, rgb(32, 36, 37));
+    box-shadow: 0px 4px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}

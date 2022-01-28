@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Styles/method.css">
+    <title>Payment Method</title>
+
+<!--  ADDING ICON LIB-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Payment</h2>
+    <h5>Choose  payment method Below</h5>
+    <form action="">
+    <div class="box">
+        <div class="box-child" id = "box1" onclick="myFunction1()"><i class="fa fa-credit-card-alt" style="padding:10%;"></i></div>
+        <div class="box-child" id = "box2" onclick="myFunction2()"><i class="fa fa fa-paypal" style="padding:10%;"></i></div>
+        <div class="box-child" id = "box3" onclick="myFunction3()"><i class="fa fa fa-bank" style="padding:10%;"></i></div>
+    </div>
+    <br>
+    <ul type="square">
+        <li><h5>Benefits of MemberShip -</h5></li>
+        <dd>
+            <ul type="square">
+                <li>Our community will help you connect with your suitable Startup Investor.</li>
+                <li>We give hand holding support to our Members in their startup journey (24 x 7)hrs.</li>
+                <li>Also being a member of our community you can approach your trusted kinda Investor for your Startup Fund raising,
+                    i.e; Seed investor, Angel Investor & etc...</li>
+            </ul>
+        </dd>
+    </ul>
+    <footer>
+        <button id="prev" type="button" class="sideButton" onclick="location.href='form.html'">Return to Form</button>
+        <button id="reset"   class="sideButton">RESET</button>
+        <a id="anc" href="payment.html"><button id="next" type="button">PROCEED</button></a>
+    </footer>
+    </form>
+    </div>
+
+    <!-- TODO: Sarthak Add this Script file to external Script file -->
+    <script>
+    window.onload= function (){
+            document.getElementById("box1").onclick = function checkbox(){
+                document.getElementById("anc").href="payment.html";
+                document.getElementById("box1").style.background = "#36b9f5";
+                document.getElementById("box1").style.boxShadow = "0px 4px 20px #36b9f5";
+                document.getElementById("box2").style.background = "rgb(0 0 0 / 52%)";
+                document.getElementById("box2").style.boxShadow = "none";
+                document.getElementById("box3").style.background = "rgb(0 0 0 / 52%)";
+                document.getElementById("box3").style.boxShadow = "none";
+            }
+            document.getElementById("box2").onclick = function checkbox(){
+                document.getElementById("anc").href="https://www.paypal.com/in/webapps/mpp/home?kid=p39982204948&gclid=EAIaIQobChMI2cm4p5W29QIVMJJmAh3iqAzHEAAYASAAEgIiwvD_BwE&gclsrc=aw.ds";
+                document.getElementById("box2").style.background = "#36b9f5";
+                document.getElementById("box2").style.boxShadow = "0px 4px 20px #36b9f5";
+                document.getElementById("box1").style.background = "rgb(0 0 0 / 52%)";
+                document.getElementById("box1").style.boxShadow = "none";
+                document.getElementById("box3").style.background = "rgb(0 0 0 / 52%)";
+                document.getElementById("box3").style.boxShadow = "none";
+            }
+            document.getElementById("box3").onclick = function checkbox(){
+                document.getElementById("anc").href="netBanking.html";
+                document.getElementById("box3").style.background = "#36b9f5";
+                document.getElementById("box3").style.boxShadow = "0px 4px 20px #36b9f5";
+                document.getElementById("box1").style.background = "rgb(0 0 0 / 52%)";
+                document.getElementById("box1").style.boxShadow = "none";
+                document.getElementById("box2").style.background = "rgb(0 0 0 / 52%)";
+                document.getElementById("box2").style.boxShadow = "none";
+            }
+
+        }
+    </script>
+    <script src="webProject/JavaScript/method.js"></script>
+
+</body>
+</html>

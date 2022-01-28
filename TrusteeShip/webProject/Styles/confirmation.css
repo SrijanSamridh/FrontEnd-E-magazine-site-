@@ -1,0 +1,40 @@
+body{
+    background-image:url(https://wallpaperaccess.com/full/46494.jpg);
+    background-repeat:no repeat;
+    background-size:cover;
+}
+
+.container{
+    background-color:rgb(255 255 255 / 82%);
+    width:50%;
+    height:700px;
+    margin-left:25%;
+    margin-top:5%;
+}
+td{
+    height:30px;
+}
+
+#check{
+    margin-left:35%;
+    color:green;
+    font-size:290px;
+}
+P{
+    margin-left:33%;
+    color:green;
+    font-size:25px;
+}
+
+button{
+    width:20%;
+    height:2rem;
+    color:white;
+    border-radius:15px 15px 15px;
+    background-color:#098cbf;
+    margin-left:40%;
+    margin-top:7%;
+}
+button:hover{
+    background-color:#054a64;
+}

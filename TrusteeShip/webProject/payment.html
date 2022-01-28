@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="" href="Styles/payment.css">
+    <title>payment page</title>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+  <h3 style="color: rgb(223, 230, 36);
+             margin-left: 20PX; font-size:smaller;
+             margin-top:50px;">
+      NOTE: PLEASE FILL THE REQUIRED INFO IN THE GIVEN CARD BELOW</h3>
+<body>
+  
+<!--CREDIT CARD-FRONT--->
+
+<div id="front" class="container">
+    <i id="contactless" class="fa fa-rss" aria-hidden="true"></i>
+    <h2 style="margin-left:5%;">CREDIT CARD</h2>
+    <img src="draw/chip.png"
+         height="15%;"
+         class="image"
+         alt="">
+    <div>
+        <!-- CARD-NUMBER -->
+        <input type="text" required
+               id="cardNumber"
+               minlength="16"
+               placeholder="0000   XXXX    XXXX    XXXX"
+               
+        />
+    </div>
+    <div>
+        <!-- DATE AND YEAR -->
+        <input id="year" type="number" placeholder="YY">
+        <input type="number" PLACEHOLDER="MM">
+        <span class="VALID-THROUGH">VALID <BR>THRU</span>
+    </div>
+
+    <div>
+        <input type="text"
+               id="name"
+
+               placeholder="CARD HOLDER'S NAME"
+        >
+        <i id="visa" class="fa fa-cc-visa" aria-hidden="true"></i>
+    </div>
+</div>
+
+<!-- CREDIT CARD-BACK -->
+
+<div id="back" class="container">
+    <div class="BLACKBAR"></div>
+    <input type="text" style="width:60%;" placeholder="Entre Your Phone Number">
+    <input type="password" style="width:10%; height:10%;" placeholder="CVV" maxlength="3">
+    <p>This card is the property of Oriental Bank of Commerce to whom it must be returned upon request or if found.
+        The use of this card is subject to the terms and conditions governing OBC Bank's Debit Card Aggreement,if found,please return to any branch of Oriental Bank of Commerce  or to Card Operations Centre,COPEC.Plot no.5,Institutional Area,Sector,Gurgaon(Haryana)- ,India</p>
+    <p>Visit Bank's :<a href="https://obcindia.co.in"> https://obcindia.co.in</a></p>
+</div>
+
+
+<!--Button-->
+<div class="button2">
+    <button type="button" class="button" onclick="location.href='OTP.html'" style="float:right ;
+        width:20% ;
+        height:50px ;
+        margin: 12%;
+        border: 2px solid #2196f3;
+        border-radius: 10px;
+        color: rgb(10, 10, 10);
+        font-size:large;
+        margin-top: 120px;"
+
+
+    ><strong>PAY NOW</strong></button>
+</div>
+
+</body>
+</html>

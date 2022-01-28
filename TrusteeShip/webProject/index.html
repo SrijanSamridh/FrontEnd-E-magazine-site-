@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
+    <title>TrusteeShip.com</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="draw/logo.png">
+
+    <link rel="stylesheet" href="Styles/hamburger.css">
+    <link rel="stylesheet" href="Styles/onScroll.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!--  NAVIGATION BAR    -->
+    <nav id="navbar">
+        <div id="logo" onclick="#'">
+            <ul>
+                <li><img src="draw/logo.png" alt="MyOnlineMeal.com" class="image-logo" style="border-radius:30%;">
+                    <div class="sub-menu">
+                        <ul>
+                            <li>
+                                <!--THEME SECTION-->
+                                <div style="float:left; padding-left:32%;">
+                                    <input type="checkbox" class="checkbox" id="checkbox" />
+                                    <label class="label" for="checkbox">
+                                        <i class="ball"></i>
+                                    </label>
+                                </div>
+                                <script>
+                                    const chk = document.getElementById('checkbox');
+
+                                    chk.addEventListener('change', () => {
+                                        document.body.classList.toggle('dark');
+                                    });
+                                </script>
+                                <!-- THEME SECTION END-->
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar-list">
+                <li class="active"><i id="home-button" class="fa fa-home"></i></li>
+                <li class="item"><a href="#services-section">SERVICES</a></li>
+                <li class="item"><a href="mailto:srijansinha3@gmail.com">EMAIL US</a></li>
+                <li class="item"><a href="#foot">ABOUT US</a></li>
+                <li class="item">
+                    <nav role='navigation'>
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                                <li class="active">Home</li>
+                                <li onclick="location.href='#services-section'">About</li>
+                                <li onclick="location.href='#services-section'">Info</li>
+                                <li>Contact</li>
+                                <li><h4>Explore More Sections</h4></li>
+                                <li onclick="location.href='Gameconer2/game.html'"><h5>Game Zone</h5></li>
+                                <li style="margin-top:5rem;"><h1>Contributors</h1></li>
+                                <li class="menu-row">
+                                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGhfvgb7uUSEQ/profile-displayphoto-shrink_800_800/0/1605245040672?e=1645056000&v=beta&t=VFU7qaNYPcmZ2iKz_-Pu-zh1Lrw9cnEUXDhvhBoitJM"
+                                         class="images menu-img"
+                                         alt=""
+                                         onclick="location.href='Resume/Srijan Samridh/srijan.html'"
+                                    >
+                                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGFAlZSkSflxw/profile-displayphoto-shrink_400_400/0/1639396341480?e=1645056000&v=beta&t=PdaP6W4KhxaLr4pCO2spBrnpxbJ0gPj5svOMHpdUkfM"
+                                         class="images menu-img"
+                                         alt=""
+                                         onclick="location.href='Resume/Sarthak Sood/resuma(sarthak).html'"
+                                    >
+                                    <img src="draw/siddharth.png"
+                                         class="images menu-img"
+                                         alt=""
+                                         onclick="location.href='Resume/Siddharth/SIDDH_RESUME.html'"
+                                    >
+                                    <img src="draw\puri.png"
+                                         class="images menu-img"
+                                         alt=""
+                                         onclick="location.href='Resume/Siddharth Puri/index.html'"
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--NAVIGATION BAR END-->
+
+
+
+    <!--HOME SECTION-->
+    <section id="welcome-section">
+        <section id="home">
+            <h1 class="h-primary text typing" id="welcome">Welcome To Your TrusteeShip!</h1>
+            <p style="color:white; margin-left:5%; font-size:1.3rem">Funding refers to the money required to start and
+                run a business.<br>
+                It is a financial investment in a company for product development,
+                manufacturing, expansion, sales and marketing, office spaces, and inventory.
+                Many startups choose to not raise funding from third parties and are funded by their founders only (to
+                prevent debts and equity dilution).
+                However, most startups do raise funding, especially as they grow larger and scale their!! <br>
+                <strong id="info">Our community will help you connect with your suitable Startup Investor.</strong>
+            </p>
+            <button class="btn" onclick="location.href='form.html'">Join Now</button>
+        </section>
+        <hr style="margin:10px 30px;">
+        <!--STARTUP OWNERS INFO SECTION-->
+        <section id="startup-owners" class="row">
+            <div id="transparent-container" class="trans-container">
+                <p>
+                    FOUNDER'S & CEO'S <BR>OF HONORABLE START-UP!!
+                </p>
+                <ul style="margin-left:20%; font-size:small;">
+                    <li>
+                        <p>Colonel Harland Sanders-KFC <br></p>
+                    </li>
+                    <li>
+                        <p>Prafull Billore-MBA CHAIWALA <br>
+                            He is the owner of this venture. He started his Chai Business with an investment of Rs.
+                            8,000.</p>
+                    </li>
+                    <li>
+                        <p>Anubhav Dubey-CHAI SUTTA BAR <br>
+                            Chai Sutta BAR Private Limited is an Indian Non-Government Company.
+                        </p>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div id="card1-img" class="polaroid col" onclick="location.href='#upper-blog1'"
+                style="cursor:pointer; width:20%">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVKgpYXFOKwz56YtH_1jz0quD0z8smtQgWBzzL1kvNc54CG3DoAZPi7f3zWevJMcCB7w&usqp=CAU"
+                    width="100%" alt="">
+                <div class="container">
+                    <p style="font-size:12px;">Colonel Harland Sanders<br>INTERNATIONAL</p>
+                </div>
+            </div>
+
+            <div id="card2-img" class="polaroid col" onclick="location.href='#lower-blog2'"
+                style="cursor:pointer; width:20%">
+                <img src="https://stairfirst.com/blog/wp-content/uploads/2021/01/FB_IMG_1566283001865-1.jpg"
+                    width="100%" alt="">
+                <div class="container">
+                    <p>Prafull Billore <br>DOMESTIC</p>
+                </div>
+            </div>
+
+            <div id="card3-img" class="polaroid col " onclick="location.href='#lower-blog1'"
+                style="cursor:pointer; width:20%">
+                <img src="https://www.indoriartist.com/Assets/upload/155481065543.jpeg" width="60%" height=""
+                    align="center" alt="">
+                <div class="container">
+                    <p>Anubhav Dubey <br>INTERNATION</p>
+                </div>
+            </div>
+        </section>
+        <!--STARTUP OWNERS INFO SECTION-->
+    </section>
+
+    <!--HOME SECTION END-->
+
+
+    <!--UPPER BLOG SECTIONS-->
+    <section id="upper-blog-section">
+        <section class="services-container background-shadow scroll-element js-scroll slide-left " id="upper-blog1"
+            style="background-image:URL(https://assets.newatlas.com/dims4/default/9b7028d/2147483647/strip/true/crop/1372x915+0+0/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Fb8%2F01%2F42fb621748ceb2a3c56f158d373f%2Fbucket-tenders-laying.jpeg)">
+            <h1 class="center">How did KFC started?</h1>
+            <div>
+                <!--            <img class="box" src="https://cdn.pixabay.com/photo/2021/12/06/08/55/christmas-market-6849578_1280.jpg" alt="">-->
+                <h2 class="h-secondary center">.....</h2>
+                <div class="centre" style="border-left:4px solid orange;">
+                    <div style="font-weight:bold; padding:2px;">KFC, also known as Kentucky Fried Chicken,[6]is an
+                        American fast food restaurant chain
+                        headquartered in Louisville,Kentucky, that specializes in fried chicken. It is the world's
+                        second-largest restaurant chain (as measured by sales) after McDonald's, with 22,621 locations
+                        globally
+                        in 136 countries as of December 2018.[7] The chain is a subsidiary of Yum! Brands, a restaurant
+                        company
+                        that also owns the Pizza Hut, Taco Bell, and WingStreetchains.KFC was founded by Colonel Harland
+                        Sanders,
+                        an entrepreneur who began selling fried chicken from his roadside restaurant in Corbin,
+                        Kentucky, during the Great Depression.
+                        Sanders identified the potential of the restaurant franchising concept, and the first "Kentucky
+                        Fried Chicken" franchise opened in Utah in 1952.
+                        KFC popularized chicken in the fast food industry, diversifying the market by challenging the
+                        established dominance of the hamburger.
+                        By branding himself as "Colonel Sanders", Harland became a prominent figure of American cultural
+                        history, and his image remains widely used in KFC advertising to this day.
+                        However, the company's rapid expansion overwhelmed the aging Sanders, and he sold it to a group
+                        of investors led by John Y. Brown
+                    </div>
+                </div>
+                <BR><BR><BR><BR>
+            </div>
+        </section>
+
+        <section class="services-container background-shadow scroll-element js-scroll slide-right" id="upper-blog2"
+            style="margin-left:20%; margin-right:9%; margin-top:-1%; margin-bottom:1%;
+                background-color: rgb(0 0 0 / 49%);
+               color:white;">
+            <div>
+                <img src="https://i.guim.co.uk/img/media/c3e3b15a01d7b6bd8dc02338d6bf92318415c457/222_580_6196_3718/master/6196.jpg?width=700&quality=85&auto=format&fit=max&s=ef3928f4518c8ea4c2ff9f5cbc7aaadc"
+                    style="float:right; margin:8px; box-shadow:2px 4px 30px white;" alt="">
+                <h1>Start-up History</h1>
+                <h2 class="h-secondary">KFC <br> Flash-Back!</h2>
+                <p class="centre">Kentucky Fried Chicken,[6]is an American fast food restaurant chain headquartered in
+                    Louisville, Kentucky, that specializes in fried chicken. It is the world's second-largest restaurant
+                    chain (as measured by sales) after McDonald's, with 22,621 locations globally in 136 countries as of
+                    December 2018.[7] The chain is a subsidiary of Yum! Brands, a restaurant company that also owns the
+                    Pizza Hut, Taco Bell, and WingStreetchains.[8]
+                    KFC was founded by Colonel Harland Sanders, an entrepreneur who began selling fried chicken from his
+                    roadside restaurant in Corbin, Kentucky, during the Great Depression. Sanders identified the
+                    potential of the restaurant franchising concept, and the first "Kentucky Fried Chicken" franchise
+                    opened in Utah in 1952. KFC popularized chicken in the fast food industry, diversifying the market
+                    by challenging the established dominance of the hamburger. By branding himself as "Colonel Sanders",
+                    Harland became a prominent figure of American cultural history, and his image remains widely used in
+                    KFC advertising to this day. However,
+                    the company's rapid expansion overwhelmed the aging Sanders, and he sold it to a group of investors
+                    led by John Y. Brown Jr. and Jack C. Massey in 1964.</p>
+
+            </div>
+        </section>
+    </section>
+    <!--UPPER BLOG SECTIONS END-->
+
+
+
+    <!---------------------Events Swiper Section -------------------------------------------->
+    <section id="Events" class="container">
+        <div></div>
+        <div class="head_text col-12">
+        </div>
+        <div class="swiper-container loading container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"
+                     style="background-image:url(https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                    <img src="draw/logo.png" class="scroll-element js-scroll fade-in"
+                        style="height: 50%; position: absolute;top: 90px;left: 175px;border-radius:50% ;">
+                    <div class="content">
+                        <!-- <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7"> -->
+                            <div style="margin-bottom: 300px;font-size: 38px;"><strong>Welcome To Our TrusteeShip</strong></div>
+                            <div style="margin-top: 40px;font-size: 26px;"><b>To know more about
+                                Our perks click Here.!</b></div>
+                        
+                        <!-- <span class="caption" data-swiper-parallax="-20%">Hello World!!</span> -->
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: url(https://assets.entrepreneur.com/content/3x2/2000/1630353121-dragon-spacex.jpg);"
+                     onclick="location.href='../webProject/Blogs HTML file/blog2.html'"
+                    >
+                    <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRml1b3B6eXVqQ2s"
+                        class="entity-img" />
+                    <div class="content">
+                        <!-- <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7"> EXPLORE SPACE
+                        </p> -->
+                        <h1 style="font-size:50px;margin-bottom: 50px;margin-left: -40px;"> EXPLORE SPACE
+                        </h1>
+                        <span class="caption" data-swiper-parallax="-20%">
+                            <ul>
+                                <li>Alen space</li>
+                                <li>Infostellar
+                                </li>
+                                <li>Skyroot Aerospace
+                                </li>
+                                <li>Pixxel
+                                </li>
+                            </ul>
+                            To know more about
+                            Space Updates click
+                            Here
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style=" background-image: url(https://3u8dbs16f2emlqxkbc8tbvgf-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/shef_meals.jpg)"
+                    onclick="location.href='../webProject/Blogs HTML file/blog1.html'">
+                    <div style="background-image: linear-gradient(180deg, black,transparent);height:100%;">
+                        <div class="content">
+                            <h1 class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7" style="font-size:80px;position: absolute;
+                            text-shadow:  5px 5px dimgray; top: 30px;left:50px;">
+                                FOOD STARTUP UPDATES!
+                            </h1>
+                            <span class="caption" data-swiper-parallax="-20%" style="position: absolute;bottom: 70px;">
+                                <ul>
+                                    <li>Zomato | Food Delivery App | Food Chain Startups in India.</li>
+                                    <li>Swiggy | Food Delivery App | Food Chain Startups in India.</li>
+                                    <li>FreshMenu | Food Delivery App | Food Startups in India.</li>
+                                    <li>Faasos | Food Delivery App | Food Startups in India.</li>
+                                    <li>Box8 | Type: Restaurant Chain | Food Startups in Mumbai.</li>
+                                </ul>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+    </section>
+
+    <!---------------------Events Swiper Section END -------------------------------------------->
+
+
+    <br>
+
+    <!-- SERVICES SECTIONS-->
+    <section id="services-section" class="flex-container">
+
+        <div class="flex-child" style="background-color:white;">
+            <h2 class="h-secondary" style="color:black;font-size:40px;">OUR MEMBERSHIP SERVICES !!</h2>
+            <br>
+            <br>
+            <dd>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Autograph_of_Benjamin_Franklin.svg/1200px-Autograph_of_Benjamin_Franklin.svg.png"
+                    width="30%" style="margin-left:60px;">
+            </dd>
+            <br><br>
+            <a href="https://www.instagram.com/srijansamridh/" id="serviceInsta"
+                class="fa fa-instagram backgroundColor"></a>
+            <a href="https://www.instagram.com/srijansamridh/" id="serviceFB" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/srijansamridh/" id="serviceLinkedIn" class="fa fa-linkedin"></a>
+
+            <!-- Map API-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16333797.386383886!2d78.9628800120931!3d20.593684033885864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1640276040207!5m2!1sen!2sin"
+                aria-controls="on" class="map" width="350px" height="150px" frameborder="150px" allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+        <div class="flex-child">
+            <img src="draw/logo.png" style="float:center; margin-top:20%;" width="100%" alt="">
+        </div>
+        <div class="flex-child" style="background-color:white; padding:4px;">
+            <h1 style="font-size:30px;color: salmon;margin: 80px 0px 0px 16px;">MEMBERSHIP SERVICES</h1>
+            <!-- <p class ="SERVICES">OUR  MEMBERSHIP aims to empower startups to achieve growth through innovation and technology.</p> -->
+            <ul style="margin:3% 0% 0% 10%;">
+                <li class="Point">Easy access to Funds</li>
+                <li class="Point">Tax saving for investors</li>
+                <li class="Point">Meet other entrepreneurs</li>
+                <li class="Point">Choose your investor</li>
+            </ul>
+            <br>
+            <p class="p3" style="color:black;margin: 0px 0px 0px 3px;">To promote growth and help Indian economy, many
+                benefits are being given to entrepreneurs establishing startups. The startups recognised through the
+                Startup India initiative are provided ample benefits for starting their own business in India.</p>
+            <br>
+            <p class="p3" style="color:black;margin: 0px 0px 0px 3px;">TRUSTEESHIP has launched a mobile app and a
+                website for easy registration for startups. Anyone interested in setting up a startup can fill up a
+                simple form on the website and upload certain documents. The entire process is completely online.</p>
+        </div>
+        <div>
+            <p id="p2" style="font-size: 25px;color:black;margin: 0px 0px 0px 15px;">This is a great time in India to
+                start your own business. The benefits of <u> TRUSTEESHIP</u> India are numerous and can help you to
+                start your business. With little compliance and a lot of opportunities. Avail them at the earliest. This
+                is the time to see your business idea to grow, develop and implement.
+
+                All the luck&emsp;!!!!!!!!</p>
+        </div>
+
+    </section>
+
+    <br>
+    <!--  YouTube Video -->
+    <section>
+
+        <iframe width="80%" height="534" src="https://www.youtube.com/embed/q3bNMJ-ZGTo"
+                style="margin-left:10%;
+                        margin-right:10%;
+                        margin-top:8%;
+                        border-radius:25px;
+                        "
+                class="background-shadow scale"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+
+        <br>
+    </section>
+
+    <br>
+
+
+    <!--Panda Effects-->
+    <section>
+        <div id="panda"></div>
+        <div class="arrow" onclick="location.href='#navbar'">&#x25B2</div>
+    </section>
+    <br>
+
+
+
+
+    <!--FOOTER SECTION-->
+    <hr>
+    <div id="foot-info" style="color:white;">
+
+        <p style="margin-left:1% ; text-align: inherit;">About Us.!</p>
+        <h3 style="margin-left:1% ; text-align: inherit;">STUDENTS OF GROUND REALITY!</h3>
+        <h4 style="margin-left:90%;">Contributed by:</h4>
+        <!-- <br> -->
+    </div>
+
+    <hr>
+    <footer id="foot" class="row">
+
+        <aside id="footcard-1" class="about-col background-shadow image scale"
+            style="cursor: pointer;width: 20%;margin-left: 2%;">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGhfvgb7uUSEQ/profile-displayphoto-shrink_800_800/0/1605245040672?e=1645056000&v=beta&t=VFU7qaNYPcmZ2iKz_-Pu-zh1Lrw9cnEUXDhvhBoitJM"
+                width="50%" height="" align="left" alt="" style="border-radius: 15% 0%; margin-top:0%;">
+            <p>Srijan Samridh!!</p>
+            <div style="margin-left:60%; text-align:left; color:black;">
+                <ul>
+                    <li>Python | Java</li>
+                    <li>Entrepreneur</li>
+                    <li>Hodophile</li>
+                </ul>
+            </div>
+            <a href="https://www.instagram.com/srijansamridh/" class="fa fa-instagram"></a>
+            <a href="https://www.instagram.com/srijansamridh/" id="fb" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/srijansamridh/" class="fa fa-linkedin"></a><br>
+            <a href="Resume\Srijan Samridh\srijan.html"><button class="button" type="button">CLICK TO KNOW
+                    MORE..</button></a>
+
+        </aside>
+
+
+        <aside id="footcard-2" class="about-col background-shadow image scale" style="cursor: pointer;width: 20%;">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGFAlZSkSflxw/profile-displayphoto-shrink_400_400/0/1639396341480?e=1645056000&v=beta&t=PdaP6W4KhxaLr4pCO2spBrnpxbJ0gPj5svOMHpdUkfM"
+                width="50%" height="" align="left" alt="" style="border-radius: 15% 0%; margin-top:0%;">
+            <p>Sarthak sood!!</p>
+            <div style="margin-left:60%; text-align:left; color:black;">
+                <ul>
+                    <li>Python | C++</li>
+                    <li>FrontEnd-Web</li>
+                    <li>BGMI Player</li>
+                </ul>
+            </div>
+            <a href="https://www.instagram.com/atomic_dark__/" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/sarthak-sood-a85784204/" class="fa fa-linkedin"></a>
+            <a href="Resume\Sarthak Sood\resuma(sarthak).html"><button type="button" class="button">CLICK TO KNOW
+                    MORE..</button></a>
+        </aside>
+
+
+        <aside id="footcard-3" class="about-col background-shadow image scale" style="cursor: pointer;width: 20%;">
+            <img src="draw\puri.png" width="50%" height="" align="left" alt=""
+                style="border-radius: 15% 0%; margin-bottom:0%;">
+            <p>Siddharth puri!!</p>
+            <div style="margin-left:60%; text-align:left; color:black;">
+                <ul>
+                    <li>Python | C++</li>
+                    <li>FrontEnd-Web</li>
+                    <li>Body Builder</li>
+                </ul>
+            </div>
+            <a href="https://www.instagram.com/_its_siddharthpuri/" class="fa fa-instagram"></a>
+            <a href="#" id="puri" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/siddharth-puri-065270212" class="fa fa-linkedin"></a>
+            <a href="Resume/Siddharth Puri/index.html"><button type="button" class="button">CLICK TO KNOW
+                    MORE..</button></a>
+
+        </aside>
+
+        <aside id="footcard-4" class="about-col background-shadow image scale"
+            style="cursor: pointer;width: 20%;margin-right: 2%;">
+            <img src="draw/siddharth.png" width="50%" height="" align="left" alt=""
+                style="border-radius: 15% 0%; margin-bottom:0%;">
+            <p>Siddharth garg!!</p>
+            <div style="margin-left:60%; text-align:left; color:black;">
+                <ul>
+                    <li>Python | C</li>
+                    <li>FrontEnd-Web</li>
+                    <li>Chess Master</li>
+                </ul>
+            </div>
+            <a href="https://www.instagram.com/siddh_61103/" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/siddharth.garg.96387" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="Resume\Siddharth\SIDDH_RESUME.html"><button type="button" class="button">CLICK TO KNOW
+                    MORE..</button></a>
+        </aside>
+    </footer>
+    <hr>
+    <marquee behavior="scroll" direction="right" style="color:white;">
+        -----------------------------------------------CopyRight&#169;----------------------------------------------
+    </marquee>
+
+    <!--FOOTER SECTION END-->
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/onScroll.js"></script>
+
+</body>
+
+</html>

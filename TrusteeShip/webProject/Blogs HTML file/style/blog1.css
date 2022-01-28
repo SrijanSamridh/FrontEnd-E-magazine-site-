@@ -1,0 +1,189 @@
+body{
+    background-image: url(https://wallpapersmug.com/large/b80e24/food-close-up-doghnut.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    margin-right: 10%;
+
+}
+.heading{
+    /*color:rgba(235, 13, 57, 0.986);*/
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0%;
+}
+.gradient-text {
+  /* Fallback: Set a background color. */
+    background-color: #CA4246;
+
+    /* Create the gradient. */
+     background-image: linear-gradient(
+          45deg,
+          #CA4246 16.666%,
+          #E16541 16.666%,
+          #E16541 33.333%,
+          #F18F43 33.333%,
+          #F18F43 50%,
+          #8B9862 50%,
+          #8B9862 66.666%,
+          #476098 66.666%,
+          #476098 83.333%,
+          #A7489B 83.333%);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+}
+.gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+
+.box1{
+    width:750px;
+    height:300px;
+    /* background-image:url("https://mma.prnwswire.com/media/1015747/KFC_Logo.jpg?p=facebook"); */
+    position: absolute;
+    background-size: cover;
+    left:4%;
+}
+.box1-info{
+    color:black;
+    font-size:23px;
+    margin-left:0%
+}
+.box2{
+    width:600px;
+    height:auto;
+    /* background-image:url("https://wallpaperaccess.com/full/2483826.jpg"); */
+
+    position: relative;
+    top:20.1rem;
+    left:0%;
+    padding:34px;
+    box-shadow:2px 4px 30px rgb(0 89 191);
+}
+.box2-info{
+    color:black;
+}
+.box2:hover{
+    background-color: rgb(0 0 0 / 59%);
+    color:white;
+    transform:scale(1.05);
+    transition:3s;
+}
+.box3{
+    width:600px;
+    height:auto;
+    position:relative;
+    padding:34px;
+    left:53.2%;
+    border-radius: 50px 15px 60px 15px;
+    /* box-shadow:2px 4px 30px rgb(0 89 191); */
+}
+.box3-info{
+    color:black;
+    font-size:23px;
+    margin-left:0%
+}
+/*<----------  BLOG SECTION    --------------->*/
+        #services{
+            margin:34px;
+            display: flex;
+        }
+        .services-container{
+            position:absolute;
+            left: 729px;
+            border:0px dashed black;
+            border-radius:0%;
+            margin-right:10%;
+            float:right;
+            padding: 34px;
+            height:auto;
+            width: 500px;
+        }
+        #box{
+            display:block;
+            margin:auto;
+            justify-items: center;
+        }
+        #services.box img{
+            margin: 56px;
+            height:0px;
+            padding: 134px;
+            text-align: center;
+            justify-items: center;
+        }
+
+        .center{
+            text-align: center;
+            font-size:;
+            padding: 12px;
+            font-family:cursive;
+            color:black;
+        }
+        .background-shadow{
+            /* background-image:url("https://images.unsplash.com/photo-1523780329224-c3be49f59edd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"); */
+            box-shadow:2px 4px 30px rgb(0 89 191);
+        }
+        #upper-blog2:hover{
+            transform:scale(1.02);
+            transition:0.5s;
+        }
+        .lowerBlog{
+           margin-left:10%; margin-right:3%; margin-top:;
+        }
+        .lowerBlog:hover{
+            background-color: rgb(0 0 0 / 59%);
+            color:white;
+            transform:scale(1.05);
+            transition:3s;
+        }
+        .image{
+            width:100%;
+        }
+        .image:hover{
+            box-shadow:2px 4px 30px white;
+            transition:0.3s;
+        }
+        /*<----------  BLOG SECTION END   --------------->*/
