@@ -7,7 +7,7 @@ const changeTurn = () =>{
 let gameover = false;
 
 const checkWin= () =>{
-    let boxtext = document.getElementsByClassName('boxtext');
+    let boxText = document.getElementsByClassName('boxText');
     let wins = [
         [0,1,2,5,5,0],
         [3,4,5 ,5,15,0],
@@ -19,10 +19,10 @@ const checkWin= () =>{
         [2,4,6,5,15,135],
     ]
    wins.forEach(e =>{
-       if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== '')){
-           document.querySelector('.info').innerText = boxtext[e[0]].innerText  + ' is  WON '
+       if((boxText[e[0]].innerText === boxText[e[1]].innerText) && (boxText[e[2]].innerText === boxText[e[1]].innerText) && (boxText[e[0]].innerText !== '')){
+           document.querySelector('.info').innerText = boxText[e[0]].innerText  + ' is  WON '
            gameover = true;
-           document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "100%"
+           document.querySelector('.imgBox').getElementsByTagName('img')[0].style.width = "100%"
            document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw , ${e[5]}deg)`
 
        }
@@ -31,10 +31,10 @@ const checkWin= () =>{
 
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
-    let boxtext = element.querySelector('.boxtext');
+    let boxText = element.querySelector('.boxText');
     element.addEventListener('click',()=>{
-        if(boxtext.innerText === ''){
-            boxtext.innerText = turn;
+        if(boxText.innerText === ''){
+            boxText.innerText = turn;
             turn = changeTurn();
              changeTurn();
             checkWin();
@@ -47,8 +47,8 @@ Array.from(boxes).forEach(element =>{
 })
 
 Reset.addEventListener('click',()=>{
-    let boxtexts = document.querySelectorAll('.boxtext');
-    Array.from(boxtexts).forEach(element => {
+    let boxTexts = document.querySelectorAll('.boxText');
+    Array.from(boxTexts).forEach(element => {
         element.innerText = ""
     });
     turn = "X";
@@ -57,7 +57,7 @@ Reset.addEventListener('click',()=>{
     
 
         document.getElementsByClassName("info")[0].innerText = turn;
-        document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
+        document.querySelector('.imgBox').getElementsByTagName('img')[0].style.width = "0px"
     
     
 
