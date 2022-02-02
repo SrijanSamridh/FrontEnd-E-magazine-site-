@@ -1,6 +1,27 @@
-
-
 // <------------------------------SMOOTH SCROLL SECTION-------------------------------------->
+var navMenuAnchorTags = document.querySelectorAll('.navbar-list li a');
+var interval;
+for(var i = 0; i < navMenuAnchorTags.length-1; i++){
+    navMenuAnchorTags[i].addEventListener('click', function(event){
+//         event.preventDefault();  // Use this to prevent "href" redirecting
+        var targetSectionID = this.textContent.trim().toLowerCase();
+        var targetSection = document.getElementById(targetSectionID);
+        console.log(targetSection);
+//         interval = setInterval(scrollVertically, 20, targetSection);
+        interval = setInterval(function(){
+            scrollVertically(targetSection);
+        }, 20);
+    });
+}
+function scrollVertically(targetSection){
+    var targetSectionCoordinates = targetSection.getBoundingClientRect();
+        if(targetSectionCoordinates.top <= 0){
+            clearInterval(interval);
+            return;
+        }
+        window.scrollBy(0, 50);
+}
+// This is for only one navigator on navbar --Using it on "About" section
 function Scroll(){
     var targetPos = 4200;
     var currentPos = 0;
@@ -35,11 +56,6 @@ let letter="";
     }
     setTimeout(type,250);
 })();
-
-
-function showMsg(){
-    alert("Siddharth doesn't have Facebook account!!! ")
-}
 
 window.onload= function (){
      document.getElementById("transparent-container").style.color="white";
