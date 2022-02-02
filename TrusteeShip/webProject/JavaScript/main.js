@@ -1,7 +1,18 @@
-let info = document.getElementById('puri');
-puri.addEventListener('click', showMsg);
 
 
+// <------------------------------SMOOTH SCROLL SECTION-------------------------------------->
+function Scroll(){
+    var targetPos = 4200;
+    var currentPos = 0;
+    var scrollInterval = setInterval(function(){
+        if(currentPos >= targetPos){
+            clearInterval(scrollInterval);
+            return;
+        }
+        currentPos += 50;
+        scrollBy(0, 50);
+    }, 10);
+}
 // <------------------------------HOME SECTION-------------------------------------->
 const texts = ["Welcome To Your TrusteeShip!"]
 let count=0;
