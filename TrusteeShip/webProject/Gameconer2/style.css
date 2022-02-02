@@ -17,8 +17,6 @@ h1{
 
 }
 #main{
-    /*background-image: url("https://i.pinimg.com/originals/34/16/fc/3416fc4113b69a0bf1cc75a772c4b5c4.gif");*/
-    background-image: url("https://miro.medium.com/max/2000/1*il9l57DK2NY2cgwvN0su1w.png");
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
