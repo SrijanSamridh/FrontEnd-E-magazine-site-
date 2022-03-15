@@ -1,4 +1,4 @@
-# FrontEnd-E-magazine-site-
+# FrontEnd-E-magazine-site
 
 > ## This is the look of the HomePage of the site...
 
